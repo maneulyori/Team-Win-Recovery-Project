@@ -181,6 +181,10 @@ exit:
     return result;
 }
 
+int res_create_display_surface(const char* name, gr_surface* pSurface) {
+    return res_create_surface(name, pSurface);
+}
+
 static int matches_locale(const char* loc) {
     if (locale == NULL) return 0;
 
